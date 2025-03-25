@@ -71,7 +71,7 @@ FROM
 WHERE
     tc.customer_id = ?`,[parameter.id]);
 
-    console.log(results)
+    console.log("Results Sent successfully", parameter.id)
 
     res.json(results);
   } catch (err) {
